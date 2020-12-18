@@ -25,7 +25,7 @@ class CommentsList extends React.Component {
     this.setState({ loading: true });
     try {
       let response = await fetch(
-        `https://m5-day10-benchmark.herokuapp.com/${this.props.id}/reviews`,
+        `https://m5-day10-benchmark.herokuapp.com/media/${this.props.id}/reviews`,
         {
           headers: {
             Authorization:
@@ -49,7 +49,8 @@ class CommentsList extends React.Component {
     });
     try {
       let response = await fetch(
-        "https://striveschool-api.herokuapp.com/api/comments/" + id,
+        `https://m5-day10-benchmark.herokuapp.com/media/${this.props.id}/reviews` +
+          id,
         {
           method: "DELETE",
           headers: {

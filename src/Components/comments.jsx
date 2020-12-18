@@ -34,7 +34,7 @@ class Comments extends React.Component {
     const { review } = this.state;
     try {
       let response = await fetch(
-        `https://m5-day10-benchmark.herokuapp.com//${this.props.id}/reviews`,
+        `https://m5-day10-benchmark.herokuapp.com/media/${this.props.id}/reviews`,
         {
           method: "POST",
           body: JSON.stringify(review),
