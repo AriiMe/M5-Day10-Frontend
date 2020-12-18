@@ -34,14 +34,12 @@ class Comments extends React.Component {
     const { review } = this.state;
     try {
       let response = await fetch(
-        "https://striveschool-api.herokuapp.com/api/comments/",
+        `https://m5-d10-backend-asm.herokuapp.com/media/${this.props.id}/reviews`,
         {
           method: "POST",
           body: JSON.stringify(review),
           headers: new Headers({
             "Content-Type": "application/json",
-            Authorization:
-              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmI2OTE2Mjk4MzViMDAwMTc1ODRmNTkiLCJpYXQiOjE2MDU4MDAyOTAsImV4cCI6MTYwNzAwOTg5MH0.EDD_ZH6yNBd1WStOkn3RPWNiO1Cm44mhsuhN43Auc2U",
           }),
         }
       );
