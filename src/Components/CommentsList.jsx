@@ -25,7 +25,7 @@ class CommentsList extends React.Component {
     this.setState({ loading: true });
     try {
       let response = await fetch(
-        `https://m5-d10-backend-asm.herokuapp.com/media/${this.props.id}/reviews`,
+        `https://m5-day10-benchmark.herokuapp.com/${this.props.id}/reviews`,
         {
           headers: {
             Authorization:
