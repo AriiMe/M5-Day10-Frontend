@@ -77,7 +77,7 @@ class carouselItem extends React.Component {
             <Carousel.Item>
               <Row>
                 {movies.flat().map((single_movie, i) => {
-                  console.log(movies);
+                  
                   if (i < 6) {
                     if (i > 0 && i < 2)
                       return (

@@ -44,7 +44,7 @@ class Main extends React.Component {
       this.setState({ searching: false });
     }
   };
-  movie_keys = ["Avengers", "Spider-man", "Batman"];
+  movie_keys = ["Hot", "New", "Watch Again"];
   render() {
     const { movies, searching, loading } = this.state;
     const { history } = this.props;
